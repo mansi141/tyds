@@ -13,8 +13,8 @@ job:
     runs-on: ubuntu-latest
 
     steps:
-      -name: Show current working directory
-      run: pwd
+      - name: Show current working directory
+        run: pwd
 
       - name: list files in the directory
-      run: ls-la
+        run: ls-la
