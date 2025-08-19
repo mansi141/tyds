@@ -5,12 +5,12 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 0 * * *" #Every day at midnight UTC
+    - cron: "*/2 * * * *" #Every day at midnight UTC
   workflow_dispatch: #Manual trigger
 
-job:
-  demo -commands:
-    runs -on: ubuntu-latest
+jobs:
+  demo-commands:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Show current working directory
